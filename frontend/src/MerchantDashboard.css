@@ -1,0 +1,324 @@
+.dashboard {
+  min-height: 100vh;
+
+  padding: 50px;
+
+  background: #fafafa;
+}
+
+.dashboard-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  max-width: 1200px;
+
+  margin: 0 auto 40px;
+}
+
+.dashboard-header span {
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #737373;
+}
+
+.dashboard-header h1 {
+  margin: 5px 0 0;
+
+  font-size: 30px;
+
+  letter-spacing: -1px;
+}
+
+.dashboard-header button {
+  border: 1px solid #ddd;
+
+  background: white;
+
+  padding: 10px 15px;
+
+  border-radius: 9px;
+}
+
+.stats {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+.stat {
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 15px;
+}
+
+.stat span {
+  display: block;
+
+  color: #737373;
+
+  font-size: 12px;
+
+  margin-bottom: 12px;
+}
+
+.stat strong {
+  font-size: 25px;
+}
+
+.dashboard-section {
+  max-width: 1200px;
+
+  margin: 30px auto 0;
+
+  padding: 24px;
+
+  background: white;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 15px;
+}
+
+.section-title {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  margin: 0;
+
+  font-size: 18px;
+}
+
+.section-title span {
+  color: #737373;
+
+  font-size: 12px;
+}
+
+.activity,
+.orders {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.activity-row,
+.order-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 16px 0;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.activity-row div:first-child,
+.order-row div:first-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.activity-row strong,
+.order-row strong {
+  font-size: 13px;
+}
+
+.activity-row span,
+.order-row span {
+  color: #737373;
+
+  font-size: 12px;
+}
+
+.event-meta,
+.order-row > div:last-child {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.status {
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  background: #f1f1f1;
+
+  font-size: 10px !important;
+
+  font-weight: 700;
+}
+
+.empty {
+  padding: 30px;
+
+  text-align: center;
+
+  color: #737373;
+}
+
+@media (max-width: 800px) {
+
+  .dashboard {
+    padding: 25px;
+  }
+
+  .stats {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.metric-card {
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: white;
+}
+
+.metric-card span {
+  display: block;
+  font-size: 12px;
+  color: #737373;
+  margin-bottom: 10px;
+}
+
+.metric-card strong {
+  font-size: 24px;
+}
+.audit-section {
+  margin-top: 30px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.section-heading span {
+  font-size: 12px;
+  color: #737373;
+}
+
+.audit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.audit-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.audit-row span {
+  font-size: 11px;
+  color: #888;
+}
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.order-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.order-row span {
+  font-size: 12px;
+  color: #737373;
+}
+.agent-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: #666;
+}
+
+.agent-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+.permission-summary {
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.permission-summary > span {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.permission-summary div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.permission-summary div span {
+  color: #666;
+}

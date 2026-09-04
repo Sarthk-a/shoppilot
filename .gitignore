@@ -1,0 +1,28 @@
+# Environment variables (Crucial: never commit API secrets)
+.env
+*.env
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.vite/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment
+backend/Lib/
+backend/Scripts/
+backend/Include/
+backend/pyvenv.cfg
+# Google ADK local session data
+backend/app/.adk/
